@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brochure — Phaenna</title>
+  <link rel="icon" href="assets/LOGO_PHAENNA_FAVICON.png">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .brochure {
+      max-width: 800px; margin: 40px auto; padding: 40px;
+      background: #fff; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-radius: 8px;
+    }
+    .brochure h1 { font-size: 36px; color: #F47B20; text-align: center; margin-bottom: 0; }
+    .brochure h2 { font-size: 18px; color: #1A5F7A; text-align: center; margin-top: 4px; font-weight: 400; }
+    .brochure .formateur { text-align: center; margin: 24px 0; padding: 16px; background: #F7F7F7; border-radius: 8px; }
+    .brochure .formateur h3 { margin: 0; font-size: 22px; color: #1A5F7A; }
+    .brochure .formateur p { margin: 4px 0; font-size: 14px; color: #666; }
+    .brochure .formations { margin: 24px 0; }
+    .brochure .formation-card { padding: 16px; margin-bottom: 12px; border-left: 4px solid #F47B20; background: #F7F7F7; border-radius: 0 8px 8px 0; }
+    .brochure .formation-card h4 { margin: 0 0 4px; font-size: 16px; }
+    .brochure .formation-card .badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; margin-left: 8px; }
+    .badge-ready { background: #E8F5E9; color: #2E7D32; }
+    .badge-progress { background: #FFF3E0; color: #E65100; }
+    .badge-planned { background: #E3F2FD; color: #1565C0; }
+    .brochure .parcours { margin: 24px 0; }
+    .brochure .parcours table { width: 100%; font-size: 14px; }
+    .brochure .parcours th { text-align: left; background: #1A5F7A; color: #fff; padding: 8px 12px; }
+    .brochure .parcours td { padding: 8px 12px; border-bottom: 1px solid #eee; }
+    .brochure .contact { margin: 24px 0; padding: 20px; background: #1A5F7A; color: #fff; border-radius: 8px; text-align: center; }
+    .brochure .contact a { color: #F47B20; }
+    .brochure .footer { text-align: center; font-size: 12px; color: #999; margin-top: 24px; }
+    .print-btn { text-align: center; margin: 20px 0; }
+    .print-btn button { background: #F47B20; color: #fff; border: none; padding: 10px 24px; border-radius: 6px; font-size: 14px; cursor: pointer; }
+    .print-btn button:hover { background: #FF9F1C; }
+    @media print { .print-btn { display: none; } .brochure { box-shadow: none; padding: 20px; } }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="logo"><img src="assets/LOGO_PHAENNA_NAV.png" alt="Phaenna" class="nav-logo-full"></a>
+      <div class="nav-links">
+        <a href="formations.html">Formations</a>
+        <a href="brochure.html" class="active">Brochure</a>
+        <a href="formateur.html">Formateur</a>
+        <a href="contact.html" class="btn-nav">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="brochure">
+    <h1>Phaenna</h1>
+    <h2>Formation aux Techniques de l'Information et de la Communication</h2>
+
+    <div class="formateur">
+      <h3>Christophe LUCET</h3>
+      <p>Formateur professionnel d'adultes — Titre FPA 2023</p>
+      <p style="font-size:12px;">SIRET 10367598900018</p>
+    </div>
+
+    <div class="formations">
+      <h3>Formations</h3>
+
+      <div class="formation-card">
+        <h4>Mini-Tutos Réseaux Sociaux <span class="badge badge-ready">✅ Prête</span></h4>
+        <p style="font-size:13px;color:#666;">LinkedIn, Facebook, Instagram, TikTok, WhatsApp Business — Canva, CapCut<br>
+        26 scénarios, 14 ateliers, 6 fiches, 44 documents PDF<br>
+        Cycle complet : 13 séances × 2h = 26h — Individuel ou intra-entreprise</p>
+      </div>
+
+      <div class="formation-card">
+        <h4>IA pour agents immobiliers <span class="badge badge-progress">⏳ En cours</span></h4>
+        <p style="font-size:13px;color:#666;">Utilisation de l'IA générative pour descriptions, analyse de marché, visuels</p>
+      </div>
+
+      <div class="formation-card">
+        <h4>Assistant multi-agences <span class="badge badge-planned">📝 Planifiée</span></h4>
+        <p style="font-size:13px;color:#666;">Application Android pour agents immobiliers multi-agences</p>
+      </div>
+    </div>
+
+    <div class="parcours">
+      <h3>Parcours</h3>
+      <table>
+        <tr><th>Période</th><th>Expérience</th></tr>
+        <tr><td>2023 — 2025</td><td><strong>Formateur TIC</strong> — Éducation Nationale, GRETA<br>
+        Conception et animation de formations aux TIC. Examinateur ICDL.</td></tr>
+        <tr><td>2006 — 2009</td><td><strong>Responsable informatique</strong> — Comptoir Agricole Villette</td></tr>
+        <tr><td>1998 — 2005</td><td><strong>Analyste-programmeur</strong> — PERINFO Paris, CERP Rouen</td></tr>
+      </table>
+      <p style="margin-top:12px;font-size:13px;"><strong>Diplômes :</strong> Titre FPA (2023), BTS Informatique de gestion (1996)<br>
+      <strong>Certifications :</strong> ICDL, Voltaire (651), Pix</p>
+    </div>
+
+    <div class="contact">
+      <h3 style="color:#fff;margin-top:0;">Contact</h3>
+      <p style="margin:4px 0;">📞 06 75 29 99 37</p>
+      <p style="margin:4px 0;">✉ <a href="mailto:contact@phaenna-formation.fr">contact@phaenna-formation.fr</a></p>
+      <p style="margin:4px 0;">🌐 <a href="https://www.phaenna-formation.fr">www.phaenna-formation.fr</a></p>
+      <p style="margin:4px 0;font-size:13px;">📍 2 rue des frères Bérat — 76120 Le Grand-Quevilly</p>
+    </div>
+
+    <div class="print-btn">
+      <button onclick="window.print()">🖨 Imprimer / Télécharger en PDF</button>
+    </div>
+
+    <div class="footer">
+      Phaenna — SIRET 10367598900018 — Déclaration d'activité en cours
+    </div>
+  </div>
+
+  <footer>
+    <div class="inner">
+      <p>&copy; 2026 Phaenna — Christophe LUCET</p>
+      <p><a href="mailto:contact@phaenna-formation.fr">contact@phaenna-formation.fr</a></p>
+    </div>
+  </footer>
+</body>
+</html>
