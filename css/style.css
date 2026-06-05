@@ -28,7 +28,7 @@ nav {
   display: flex; align-items: center; justify-content: space-between;
 }
 .logo { display: flex; align-items: center; text-decoration: none; }
-.nav-logo-full { height: 32px; width: auto; }
+.nav-logo-full { height: 22px; width: auto; }
 .nav-links { display: flex; align-items: center; gap: 24px; }
 .nav-links a { font-size: 14px; color: #434949; font-weight: 500; }
 .nav-links a:hover, .nav-links a.active { color: #F47B20; }
