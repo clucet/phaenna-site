@@ -3,32 +3,85 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Phaenna Formation</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
-      background: linear-gradient(135deg, #1A5F7A 0%, #2D2D2D 100%);
-      color: white;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 20px;
-    }
-    h1 { font-size: 3rem; font-weight: 700; color: #F47B20; margin-bottom: 10px; }
-    p { font-size: 1.1rem; margin: 8px 0; opacity: 0.9; }
-    .email { color: #F47B20; font-weight: 600; text-decoration: none; font-size: 1.2rem; }
-    .footer { margin-top: 60px; font-size: 0.85rem; opacity: 0.5; }
-  </style>
+  <title>Phaenna — Formation aux TIC</title>
+  <link rel="icon" href="assets/LOGO_PHAENNA_FAVICON.png">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <h1>Phaenna</h1>
-  <p>Formation en marketing digital immobilier</p>
-  <p style="margin-top: 30px;">Site en construction</p>
-  <p style="margin-top: 20px;"><a class="email" href="mailto:contact@phaenna-formation.fr">contact@phaenna-formation.fr</a></p>
-  <div class="footer">Bientôt disponible</div>
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="logo"><span class="logo-p">P</span>haenna</a>
+      <div class="nav-links">
+        <a href="formations.html">Formations</a>
+        <a href="formateur.html">Formateur</a>
+        <a href="contact.html" class="btn-nav">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-content">
+      <img src="assets/LOGO_PHAENNA.png" alt="Phaenna" class="hero-logo">
+      <h1>Formation aux Techniques de l'Information<br>et de la Communication</h1>
+      <p class="hero-sub">Des compétences numériques pour les professionnels de l'immobilier et des TIC</p>
+      <a href="formations.html" class="btn">Découvrir les formations</a>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="inner">
+      <h2>Formations</h2>
+      <div class="cards">
+        <div class="card">
+          <div class="card-badge ready">Prête</div>
+          <h3>Mini-Tutos Réseaux Sociaux</h3>
+          <p>26 scénarios, 14 ateliers — LinkedIn, Instagram, TikTok, Canva, vidéo</p>
+          <a href="formations.html" class="btn-small">En savoir plus</a>
+        </div>
+        <div class="card">
+          <div class="card-badge progress">En cours</div>
+          <h3>IA pour agents immobiliers</h3>
+          <p>Utilisation de l'intelligence artificielle au service de l'immobilier</p>
+          <a href="formations.html" class="btn-small">En savoir plus</a>
+        </div>
+        <div class="card">
+          <div class="card-badge planned">Planifiée</div>
+          <h3>Assistant multi-agences</h3>
+          <p>Application Android pour agents immobiliers multi-agences</p>
+          <a href="formations.html" class="btn-small">En savoir plus</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="inner">
+      <h2>Pourquoi Phaenna ?</h2>
+      <div class="why-grid">
+        <div class="why-item">
+          <div class="why-icon" style="background:#F47B20;">01</div>
+          <h3>Pédagogie active</h3>
+          <p>70 % pratique, 30 % théorie. Chaque formation alterne mini-tutos et ateliers hands-on.</p>
+        </div>
+        <div class="why-item">
+          <div class="why-icon" style="background:#1A5F7A;">02</div>
+          <h3>Supports prêts à l'emploi</h3>
+          <p>Fiches, templates Canva, scripts de tournage, archives de montage — tout est fourni.</p>
+        </div>
+        <div class="why-item">
+          <div class="why-icon" style="background:#F47B20;">03</div>
+          <h3>Spécialisation immobilière</h3>
+          <p>Formateur agent immobilier indépendant, je connais le terrain et les besoins réels.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="inner">
+      <p>&copy; 2026 Phaenna — Christophe LUCET</p>
+      <p><a href="mailto:contact@phaenna-formation.fr">contact@phaenna-formation.fr</a></p>
+    </div>
+  </footer>
 </body>
 </html>
