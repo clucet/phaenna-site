@@ -3,6 +3,11 @@
 <head>
   <meta charset="UTF-8">
 <meta name="robots" content="noindex, nofollow">
+<meta property="og:title" content="Phaenna — Formation aux TIC">
+<meta property="og:description" content="Formation aux Techniques de l'Information et de la Communication">
+<meta property="og:image" content="https://www.phaenna-formation.fr/assets/LOGO_PHAENNA.png">
+<meta property="og:url" content="https://www.phaenna-formation.fr">
+<meta property="og:type" content="website">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact — Phaenna</title>
   <link rel="icon" href="assets/LOGO_PHAENNA_FAVICON.png">
@@ -51,16 +56,23 @@
 
       <div class="contact-form">
         <h2>Écrivez-moi</h2>
-        <form action="mailto:contact@phaenna-formation.fr" method="GET" enctype="text/plain">
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="e3d5b780-dc89-4dbd-bf98-b75d3ca4b2c2">
+          <input type="checkbox" name="botcheck" style="display:none;">
+          <input type="hidden" name="redirect" value="https://www.phaenna-formation.fr/contact.html?success=1">
+          <label for="nom">Nom / Prénom</label>
+          <input type="text" id="nom" name="name" placeholder="Votre nom" required style="width:100%;padding:10px;border:2px solid #E0E0E0;border-radius:6px;margin-bottom:16px;font-family:'Poppins',sans-serif;font-size:14px;">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Votre email" required style="width:100%;padding:10px;border:2px solid #E0E0E0;border-radius:6px;margin-bottom:16px;font-family:'Poppins',sans-serif;font-size:14px;">
           <label for="sujet">Sujet</label>
-          <select id="sujet" name="subject">
+          <select id="sujet" name="subject" required style="width:100%;padding:10px;border:2px solid #E0E0E0;border-radius:6px;margin-bottom:16px;font-family:'Poppins',sans-serif;font-size:14px;">
             <option value="Demande d'information">Demande d'information</option>
             <option value="Devis formation">Devis formation</option>
             <option value="Devis intra-entreprise">Devis intra-entreprise</option>
             <option value="Autre">Autre</option>
           </select>
           <label for="message">Votre message</label>
-          <textarea id="message" name="body" rows="6" placeholder="Bonjour, je souhaite en savoir plus sur..." required></textarea>
+          <textarea id="message" name="message" rows="6" placeholder="Bonjour, je souhaite en savoir plus sur..." required style="width:100%;padding:10px;border:2px solid #E0E0E0;border-radius:6px;margin-bottom:16px;font-family:'Poppins',sans-serif;font-size:14px;"></textarea>
           <button type="submit" class="btn">Envoyer</button>
         </form>
       </div>
@@ -72,6 +84,7 @@
       <p>&copy; 2026 Phaenna — Christophe LUCET</p>
       <p><a href="mailto:contact@phaenna-formation.fr">contact@phaenna-formation.fr</a></p>
     </div>
-  </footer>
+  <p><a href="mentions-legales.html">Mentions légales</a></p>
+</footer>
 </body>
 </html>
