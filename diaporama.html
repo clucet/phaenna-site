@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mini-Tutos Réseaux Sociaux — Diaporama</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Poppins', Arial, sans-serif; background: #1A5F7A; overflow: hidden; height: 100vh; }
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 200;
+      background: rgba(255,255,255,0.95); border-bottom: 2px solid #F47B20; padding: 8px 0;
+    }
+    .nav-inner {
+      max-width: 1100px; margin: 0 auto; padding: 0 24px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .nav-inner a { font-size: 14px; color: #434949; font-weight: 500; text-decoration: none; }
+    .nav-inner a:hover { color: #F47B20; }
+    .nav-inner .active { color: #F47B20; }
+    .slide { display: none; width: 100vw; height: 100vh; padding: 80px 60px 60px; color: #fff; position: relative; }
+  .slide.active { display: flex; flex-direction: column; justify-content: center; }
+  .slide h1 { font-family: 'Montserrat', sans-serif; font-size: 48px; margin-bottom: 16px; }
+  .slide h2 { font-family: 'Montserrat', sans-serif; font-size: 32px; margin-bottom: 24px; }
+  .slide h3 { font-family: 'Montserrat', sans-serif; font-size: 22px; margin-bottom: 12px; color: #F47B20; }
+  .slide p { font-size: 18px; line-height: 1.6; margin-bottom: 12px; opacity: 0.9; }
+  .slide ul { list-style: none; font-size: 18px; line-height: 2; }
+  .slide ul li::before { content: "▸ "; color: #F47B20; font-weight: bold; }
+  .slide table { width: 100%; border-collapse: collapse; font-size: 16px; margin: 16px 0; }
+  .slide th { background: #F47B20; color: #fff; padding: 10px 16px; text-align: left; }
+  .slide td { padding: 8px 16px; border-bottom: 1px solid rgba(255,255,255,0.2); }
+  .badge { display: inline-block; background: #F47B20; color: #fff; padding: 4px 12px; border-radius: 4px; font-size: 14px; }
+
+  .nav-arrows { position: fixed; bottom: 30px; left: 50%; transform: translateX(-50%); z-index: 100; display: flex; gap: 16px; }
+  .nav-arrows button { background: rgba(255,255,255,0.2); color: #fff; border: none; padding: 10px 20px; border-radius: 6px; cursor: pointer; font-size: 16px; }
+  .nav-arrows button:hover { background: #F47B20; }
+  .counter { position: fixed; bottom: 30px; right: 30px; color: rgba(255,255,255,0.5); font-size: 14px; z-index: 100; }
+
+  .slide-1 { background: linear-gradient(135deg, #1A5F7A 0%, #434949 100%); text-align: center; }
+  .slide-1 h1 { color: #F47B20; font-size: 56px; }
+  .slide-1 p { font-size: 22px; }
+  .slide-alt { background: #fff; color: #434949; }
+  .slide-alt h2 { color: #1A5F7A; }
+  .slide-alt th { background: #1A5F7A; }
+  .slide-alt td { border-color: #ddd; }
+  .slide-alt ul li::before { color: #F47B20; }
+
+  .roi-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin: 20px 0; }
+  .roi-card { background: rgba(255,255,255,0.1); padding: 24px; border-radius: 8px; }
+  .roi-card h3 { color: #F47B20; }
+  .roi-card .price { font-size: 36px; font-weight: 800; font-family: Montserrat; color: #fff; }
+  .roi-card .price.ok { color: #4CAF50; }
+  .slide-alt .roi-card { background: #F7F7F7; }
+  .slide-alt .roi-card .price { color: #1A5F7A; }
+  .slide-alt .roi-card .price.ok { color: #4CAF50; }
+
+  .contact-info { background: rgba(255,255,255,0.1); padding: 24px; border-radius: 8px; margin-top: 20px; }
+  .contact-info p { margin: 4px 0; }
+  .slide-alt .contact-info { background: #F7F7F7; }
+
+  @media (max-width: 768px) {
+    .slide { padding: 30px; }
+    .slide h1 { font-size: 32px; }
+    .slide h2 { font-size: 24px; }
+    .slide p, .slide ul { font-size: 15px; }
+    .roi-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" style="font-family:Montserrat;font-size:20px;font-weight:800;color:#1A5F7A;">Phaenna</a>
+    <div style="display:flex;gap:16px;">
+      <a href="formations.html">Formations</a>
+      <a href="diaporama.html" class="active">Diaporama</a>
+      <a href="brochure.html">Brochure</a>
+      <a href="formateur.html">Formateur</a>
+      <a href="contact.html" style="background:#F47B20;color:#fff!important;padding:6px 16px;border-radius:6px;">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<div id="slide1" class="slide slide-1 active">
+  <div style="margin-bottom:30px;"><span style="font-family:Montserrat;font-size:72px;color:#F47B20;font-weight:800;">P</span><span style="font-family:Montserrat;font-size:48px;">haenna</span></div>
+  <p style="font-size:14px;opacity:0.6;margin-bottom:40px;">Formation aux Techniques de l'Information et de la Communication</p>
+  <h1>Mini-Tutos Réseaux Sociaux</h1>
+  <p>La formation clé en main pour vos agents immobiliers</p>
+  <p style="margin-top:40px;font-size:14px;opacity:0.5;">Christophe LUCET — contact@phaenna-formation.fr</p>
+</div>
+
+<div id="slide2" class="slide slide-alt">
+  <h2>Pourquoi former vos agents ?</h2>
+  <ul>
+    <li><strong>78 %</strong> des acheteurs consultent les réseaux avant d'acheter</li>
+    <li>Les <strong>algorithmes</strong> changent tous les 6 mois</li>
+    <li>Une agence <strong>visible</strong> = une agence qui vend</li>
+    <li>La <strong>cohérence</strong> de marque rassure les clients</li>
+    <li>Un agent formé publie <strong>3× plus</strong> qu'un agent non formé</li>
+  </ul>
+</div>
+
+<div id="slide3" class="slide" style="background:linear-gradient(135deg,#1A5F7A,#434949);">
+  <h2 style="color:#F47B20;">Le programme</h2>
+  <p style="font-size:24px;margin-bottom:24px;">13 séances × 2h = <strong style="color:#F47B20;">26 heures</strong></p>
+  <table>
+    <tr><th>Période</th><th>Thème</th><th>Séances</th></tr>
+    <tr><td>Séance 0</td><td>Audit des profils & branding</td><td>TT-00a à TT-00d (4)</td></tr>
+    <tr><td>Module 1</td><td>Optimisation LinkedIn & Meta</td><td>TT-01 à TT-04 (4)</td></tr>
+    <tr><td>Module 2</td><td>Création de contenu visuel (Canva)</td><td>TT-05 à TT-08 (4)</td></tr>
+    <tr><td>Module 3</td><td>Contenu immobilier (annonces, planning)</td><td>TT-09 à TT-12 (4)</td></tr>
+    <tr><td>Module 4</td><td>Vidéo & walkthrough</td><td>TT-13 à TT-16 (4)</td></tr>
+    <tr><td>Module 5</td><td>Légendes & programmation</td><td>TT-17 à TT-20 (4)</td></tr>
+    <tr><td>Module 6</td><td>Statistiques & projet final</td><td>TT-21 à TT-22 (2+1 atelier)</td></tr>
+    <tr><td>Post-formation</td><td>Suivi à 3 mois</td><td>1 séance</td></tr>
+  </table>
+</div>
+
+<div id="slide4" class="slide slide-alt">
+  <h2>Supports inclus</h2>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+    <ul>
+      <li>26 scénarios vidéo</li>
+      <li>14 ateliers pratiques</li>
+      <li>6 fiches mémo</li>
+      <li>44 documents PDF brandés</li>
+    </ul>
+    <ul>
+      <li>Templates Canva</li>
+      <li>Quiz + questionnaires</li>
+      <li>Attestations individuelles</li>
+      <li>Bilan pédagogique pour l'agence</li>
+    </ul>
+  </div>
+</div>
+
+<div id="slide5" class="slide" style="background:linear-gradient(135deg,#434949,#1A5F7A);">
+  <h2 style="color:#F47B20;">Tarifs</h2>
+  <table>
+    <tr><th>Formule</th><th>Prix HT</th><th>Détail</th></tr>
+    <tr><td>Intra-entreprise (10 pers. max)</td><td><strong>4 000 €</strong></td><td>Cycle complet <strong>26h</strong></td></tr>
+    <tr><td>Intra-entreprise (5 pers. max)</td><td>2 500 €</td><td>Format réduit</td></tr>
+    <tr><td>Pack 2 groupes (20 pers.)</td><td>7 000 €</td><td>Économie de 1 000 €</td></tr>
+    <tr><td>Inter-entreprises (individuel)</td><td>350 €</td><td>Cycle complet, dates fixes</td></tr>
+    <tr><td>Licence supports (sans formateur)</td><td>2 000 €/an</td><td>Templates + fiches + mise à jour</td></tr>
+    <tr><td>Suivi post-formation (3 mois)</td><td>800 €</td><td>3 séances de 1h en visio</td></tr>
+  </table>
+  <p style="margin-top:16px;font-size:14px;opacity:0.7;">Prise en charge OPCO possible (Qualiopi en cours)</p>
+</div>
+
+<div id="slide6" class="slide slide-alt">
+  <h2>ROI — Retour sur investissement</h2>
+  <div class="roi-grid">
+    <div class="roi-card">
+      <h3>Formation interne</h3>
+      <p>Temps du chef d'agence</p>
+      <div class="price" style="text-decoration:line-through;">~20 800 €</div>
+      <p style="font-size:13px;">80 €/h × 26h = coût d'opportunité</p>
+    </div>
+    <div class="roi-card">
+      <h3>Formation Phaenna</h3>
+      <p>Groupe de 10 agents</p>
+      <div class="price ok">4 000 €</div>
+      <p style="font-size:13px;">Soit 400 € par agent</p>
+    </div>
+  </div>
+  <p style="font-size:22px;text-align:center;color:#4CAF50;"><strong>Économie : 16 800 €</strong></p>
+  <ul style="margin-top:12px;">
+    <li>Cohérence de marque garantie</li>
+    <li>Programme prêt à l'emploi (pas de conception interne)</li>
+    <li>Attestations Qualiopi (financements OPCO)</li>
+  </ul>
+</div>
+
+<div id="slide7" class="slide" style="background:linear-gradient(135deg,#1A5F7A,#434949);">
+  <h2 style="color:#F47B20;">Le formateur</h2>
+  <p><strong>Christophe LUCET</strong> — Formateur professionnel d'adultes (FPA 2023)</p>
+  <ul style="margin-top:16px;">
+    <li>15+ ans en informatique (analyste-programmeur, responsable IT)</li>
+    <li>2+ ans en formation (Éducation Nationale, GRETA)</li>
+    <li>Agent immobilier indépendant — NEXUS Immobilier</li>
+    <li>Certifications : ICDL, Voltaire, Pix</li>
+</ul>
+</div>
+
+<div id="slide8" class="slide slide-alt">
+  <h2>Contact</h2>
+  <div class="contact-info">
+    <p><strong>Christophe LUCET</strong></p>
+    <p style="font-size:14px;opacity:0.7;">Formateur professionnel d'adultes — Titre FPA 2023</p>
+    <p style="font-size:14px;opacity:0.7;">Agent immobilier indépendant — NEXUS Immobilier</p>
+    <p style="margin-top:16px;">📞 06 75 29 99 37</p>
+    <p>✉ <a href="mailto:contact@phaenna-formation.fr" style="color:#F47B20;">contact@phaenna-formation.fr</a></p>
+    <p>🌐 <a href="https://www.phaenna-formation.fr" style="color:#F47B20;">www.phaenna-formation.fr</a></p>
+    <p style="margin-top:16px;font-size:13px;opacity:0.6;">SIRET 10367598900018 — Déclaration d'activité en cours</p>
+  </div>
+</div>
+
+<div class="nav-arrows">
+  <button onclick="prevSlide()">◀ Précédent</button>
+  <button onclick="nextSlide()">Suivant ▶</button>
+</div>
+<div class="counter" id="counter">1 / 8</div>
+
+<script>
+  var current = 1;
+  var total = 8;
+  function showSlide(n) {
+    for (var i = 1; i <= total; i++) document.getElementById('slide'+i).classList.remove('active');
+    document.getElementById('slide'+n).classList.add('active');
+    document.getElementById('counter').textContent = n + ' / ' + total;
+    current = n;
+  }
+  function nextSlide() { if (current < total) showSlide(current+1); else showSlide(1); }
+  function prevSlide() { if (current > 1) showSlide(current-1); else showSlide(total); }
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'ArrowRight' || e.key === 'ArrowDown') nextSlide();
+    if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') prevSlide();
+  });
+</script>
+</body>
+</html>
