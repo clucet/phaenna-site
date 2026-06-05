@@ -8,17 +8,6 @@
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: 'Poppins', Arial, sans-serif; background: #1A5F7A; overflow: hidden; height: 100vh; }
-    nav {
-      position: fixed; top: 0; left: 0; right: 0; z-index: 200;
-      background: rgba(255,255,255,0.95); border-bottom: 2px solid #F47B20; padding: 8px 0;
-    }
-    .nav-inner {
-      max-width: 1100px; margin: 0 auto; padding: 0 24px;
-      display: flex; align-items: center; justify-content: space-between;
-    }
-    .nav-inner a { font-size: 14px; color: #434949; font-weight: 500; text-decoration: none; }
-    .nav-inner a:hover { color: #F47B20; }
-    .nav-inner .active { color: #F47B20; }
     .slide { display: none; width: 100vw; height: 100vh; padding: 80px 60px 60px; color: #fff; position: relative; }
   .slide.active { display: flex; flex-direction: column; justify-content: center; }
   .slide h1 { font-family: 'Montserrat', sans-serif; font-size: 48px; margin-bottom: 16px; }
@@ -71,13 +60,13 @@
 <body>
 <nav>
   <div class="nav-inner">
-    <a href="index.html" style="font-family:Montserrat;font-size:20px;font-weight:800;color:#1A5F7A;">Phaenna</a>
-    <div style="display:flex;gap:16px;">
+    <a href="index.html" class="logo"><img src="assets/LOGO_PHAENNA_NAV.png" alt="Phaenna" class="nav-logo-full"></a>
+    <div class="nav-links">
       <a href="formations.html">Formations</a>
       <a href="diaporama.html" class="active">Diaporama</a>
       <a href="brochure.html">Brochure</a>
       <a href="formateur.html">Formateur</a>
-      <a href="contact.html" style="background:#F47B20;color:#fff!important;padding:6px 16px;border-radius:6px;">Contact</a>
+      <a href="contact.html" class="btn-nav">Contact</a>
     </div>
   </div>
 </nav>
