@@ -142,3 +142,32 @@ footer p { margin-bottom: 4px; }
   .hero h1 { font-size: 24px; }
   .hero-logo { max-width: 240px; }
 }
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  body { background: #1a1a2e; color: #ccc; }
+  nav { background: #16213e; border-bottom-color: #F47B20; }
+  .section.alt { background: #0f3460; }
+  .hero { background: linear-gradient(135deg, #0f3460, #1a1a2e); }
+  .page-header { background: #0f3460; }
+  .card { background: #16213e; border-top-color: #F47B20; }
+  .card p { color: #999; }
+  .nav-links a { color: #ccc; }
+  .nav-links a:hover, .nav-links a.active { color: #F47B20; }
+  .formation-detail { background: #16213e; }
+  footer { background: #0d1b2a; }
+  .brochure { background: #16213e; color: #ccc; }
+  .brochure .formateur { background: #0f3460; }
+  .brochure .formation-card { background: #0f3460; }
+  .why-item p, .formation-detail p { color: #999; }
+  .contact-info { background: #16213e; }
+  .contact-form select, .contact-form textarea { background: #0f3460; color: #ccc; border-color: #333; }
+  .bio li { color: #ccc; }
+  .slide-alt { background: #16213e; }
+  .slide-alt h2 { color: #F47B20; }
+  .slide-alt .roi-card { background: #0f3460; }
+  .slide-alt .contact-info { background: #0f3460; }
+  .slide-alt ul li { color: #ccc; }
+  .slide-alt td { border-color: #333; color: #ccc; }
+  .nav-arrows button { background: rgba(255,255,255,0.1); }
+}
