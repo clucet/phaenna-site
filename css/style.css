@@ -112,6 +112,9 @@ nav {
 .bio h2 { margin-top: 32px; margin-bottom: 12px; text-align: left; font-size: 22px; }
 .bio ul { margin-left: 20px; margin-bottom: 16px; }
 .bio li { margin-bottom: 6px; font-size: 15px; }
+.bio .parcours-table { width: 100%; font-size: 14px; border-collapse: collapse; margin: 0 0 32px 0; }
+.bio .parcours-table th { text-align: left; background: #1A5F7A; color: #fff; padding: 8px 12px; }
+.bio .parcours-table td { padding: 8px 12px; border-bottom: 1px solid #eee; }
 
 /* Contact */
 .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
@@ -163,6 +166,7 @@ footer p { margin-bottom: 4px; }
   .contact-info { background: #16213e; }
   .contact-form select, .contact-form textarea { background: #0f3460; color: #ccc; border-color: #333; }
   .bio li { color: #ccc; }
+  .bio .parcours-table td { border-bottom-color: #333; }
   .slide-alt { background: #16213e; }
   .slide-alt h2 { color: #F47B20; }
   .slide-alt .roi-card { background: #0f3460; }
